@@ -3,8 +3,8 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_form_language'
   s.version     = '1.3.1'
-  s.summary     = 'TODO: Add gem summary here'
-  s.description = 'TODO: Add (optional) gem description here'
+  s.summary     = 'spree gem to update form labels'
+  s.description = 'WWWWWWWWW'
   s.required_ruby_version = '>= 1.8.7'
 
    s.author    = 'Sivanand'
