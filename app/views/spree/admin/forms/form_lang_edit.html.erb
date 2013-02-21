@@ -1,0 +1,16 @@
+<h3><%=@form.form_name%></h3>
+
+<%= semantic_form_for [:admin,@form] ,:url=> form_lang_update_admin_form_path ,:method=>"post" do |f| %>
+
+	<% @yml_values.keys.each do |key| %>	
+	  <div class="field">
+	    <%= label_tag(key) %><br />
+	    <%= text_field_tag(key,@yml_values[key]) %>
+	  </div>
+ 	<% end %>
+
+  <div class="actions">
+    <%= f.submit%>
+  </div>
+<% end %>
+

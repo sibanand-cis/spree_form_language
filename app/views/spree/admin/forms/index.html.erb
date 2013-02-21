@@ -1,0 +1,27 @@
+<h1>Listing forms</h1>
+
+<table>
+  <tr>
+    <th>Form name</th>
+    <th>English</th>
+    <th>German</th>
+  </tr>
+
+<% @forms.each do |form| %>
+  <tr>
+    <td><%= form.form_name %></td>
+    <td><%= link_to "Eng",form_lang_edit_admin_form_path(form,{:lang=>"en"})%></td>
+    <td><%= link_to "Ger",form_lang_edit_admin_form_path(form,{:lang=>"de"})%></td>
+    
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+
+<%= link_to 'New Form', new_admin_form_path %>
+
+ <div id="new_form">
+</div>
+
