@@ -97,8 +97,8 @@ class Spree::Admin::FormsController < Spree::Admin::BaseController
     end
     
     lang = {}
-      
-    if params["lang"] != "de"
+
+    if params["lang"] == "de"
 
       lang["de"] = @yml_obj
       File.open(Rails.root + "config/locales/de.yml","w:ASCII-8BIT") { |f| YAML.dump(lang, f) }
